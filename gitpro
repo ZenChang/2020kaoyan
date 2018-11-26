@@ -1,0 +1,5 @@
+git config credential.helper 'cache --timeout=86400'
+
+
+
+3.6 Git 分支 - 分支的衍合
