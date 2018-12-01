@@ -230,3 +230,5 @@ linux standard base && file system hierarchy standard
 1.5 重在solution的学习
 兴趣
 成就感
+
+第二章 主机规划和磁盘分区
