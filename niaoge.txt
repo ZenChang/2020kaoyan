@@ -160,3 +160,73 @@ linux其实就是 核心 + 系统呼叫 = 操作系统
 让386计算机开始运作,并且等待用户指令输入
 
 unix 历史
+
+thompson: unics: file server system
+所有程序或系统装置都是文件,不管构建编辑器还是附属文件,所写的程序只有一个目的,且要有效的完成目标
+科技始终来自于人性
+
+Ritchi将B语言改写为C语言,然后将Thompson的汇编unics,用C语言改写为Unix
+
+Bill Joy 将Unix改写为一个Bekeley Software Distribute版本
+Minix: 教学
+RMS stallman: GNU GNU C Compiler FSF Emacs GNU C Lib BashShell
+Twz: linux
+GNU is Not unix
+
+搭载一些手册和服务就可以贩卖自由软件
+
+GPLv3 && GPLv2
+
+GPL 自由软件和开源软件不同之处
+GPL: 任何使用GPL授权的全部或部分代码的软件必须使用GPL授权
+开源软件:全部或部分可以作为其他软件使用,且其他软件无需使用与开源软件相同的授权来发布
+
+因此你的软件若想允许商业行为选择 BSD, 若想远离商业行为采用GPL
+
+Free Software 自由软件
+FreeWare 免费软件
+ShareWare 试用期
+
+1.2 托瓦兹的linux发展
+基于谭宁邦minix
+
+1.2.2 对386硬件的多任务测试
+多任务能力的CPU就会在不同的程序间切换
+
+1.2.3 初次释放linux 0.0.2
+
+1.2.4 linux的发展 虚拟团队
+
+1.2.5 linux核心版本
+
+主版本.次版本.释出版本-修改版本 : 4.15.0-39-generic
+主次版本为奇数:发展中版本
+主次版本为偶数:稳定版本
+
+1.2.6 linux distribution
+
+linux distribution = kernel + software + tools + 可完全安装程序
+
+linux standard base && file system hierarchy standard
+
+1.3 linux 当前的角色
+
+1.3.1 企业环境的利用
+网络服务器 关键任务的应用 学术机构的高效能运算任务
+丛集计算系统的平行运算:将原本的工作分成多份,然后交给多部主机去运算,最后将结果整合在一起
+
+1.3.2 个人环境使用
+
+1.3.3 云端连用
+
+1.4 linux该如何学习
+学习文字接口而不是图形接口
+
+1.4.1 从头学起linux
+1.4.2 选择一本易学的工具书
+1.4.3 实作再实作
+1.4.4 发生问题怎么处理
+
+1.5 重在solution的学习
+兴趣
+成就感
