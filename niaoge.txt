@@ -232,3 +232,54 @@ linux standard base && file system hierarchy standard
 成就感
 
 第二章 主机规划和磁盘分区
+
+2.1 linux与硬件搭配
+各个组件和装置在linux下都是文件
+
+2.1.1 认识计算机的硬件配备
+2.1.2 选择与linux搭配的主机配备
+2.1.3 各个硬件装置在linux中的文件名
+鼠标 /dev/input/mouse[0-15]
+硬盘 /dev/sd[a-d]
+
+2.1.4 使用虚拟机来学习
+
+2.2 磁盘分区
+2.2.1 磁盘连接的方式与装置文件名的关系
+2.2.2 MSDOC(MBR)与GPT磁盘分区表
+
+MBR:3个主分区+1个延伸分区(多个逻辑分区)
+sd1,sd2,sd3,sd5,sd6,sd7
+
+GPT:128个记录区(LBA0+LBA1+LBA2(p1,p2,p3,p4)+LBA33+LBA34(partion1, partion2,...)+LBA34+LBA33+...LBA1
+
+2.2.3 开机流程中的BIOS和UEFI开机检测程序
+CMOS:记录硬件参数嵌入主板的存储器
+BIOS:写入到主板上的一个韧体(firmware, 写入到硬件上的软件程序),计算机开机执行的第一个程序
+
+BIOS(读取第一个扇区的MBR位置)-->MBR(load核心文件)-->操作系统执行
+
+1. 硬件开机,启动开机主动执行的韧体:BIOS
+2. BIOS读取一个扇区的装置,也就是MBR
+3. MBR内含开机管理程序(boot loader)
+4. boot loader读取操作系统核心文件
+
+boot loader: 提供选单,载入核心文件,转交其他loader
+
+1. 每个分区槽都有自己的启动扇区
+2. 实际可开机核心文件是放在各个分区槽中的
+3. loader只会认识自己分区槽中的核心文件以及其他loader
+4. loader可直接指向其他loader
+
+2.2.4 linux安装模式下,磁盘分区的选择
+目录树结构
+挂载:将一个目录当成进入点,将磁盘分区槽的数据放置在该目录下
+挂载点:该目录
+
+2.3 安装linux前的规划
+2.3.1 选择适当的linux distribution
+2.3.2 主机的服务规划和硬件的关系
+2.3.3 主机硬盘的主要规划
+2.3.4 鸟哥的两个实例
+
+第三章 安装centOs7
