@@ -341,3 +341,24 @@ LS路由协议的一种实现,使用了Dijkstra算法,单一自治系统内决�
 2.6.4 DNS
 DNS(域名系统:Domain Name System)
 域名和IP之间的映射
+DNS运行在UDP之上
+
+2.6.5 HTTP协议
+HTTP(超文本协议 Hype Text Transfer Protocol)
+
+HTTP使用URI(unified resource identified)作为网络资源的唯一标识
+
+绝对URI和相对URI
+
+http://demo.com/article/1211/?scroll=true
+http:// 协议名称
+demo.com 域名
+/article/1211 资源路径
+scroll=true 查询路径
+
+有协议名称和域名,称为绝对路径,否则称为相对路径
+
+请求消息和响应消息
+通用头域包括:Cache-Control, Connection, KeepAlive, Data, Program
+
+2.7 基于消息协议的公告牌
