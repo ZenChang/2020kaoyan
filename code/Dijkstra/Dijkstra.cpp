@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
+#include <limits>
 
 struct MapInfo
 {
@@ -28,11 +30,28 @@ void OutputMapInfo(std::vector<MapInfo>& vec_map_info)
   }
 }
 
+void OutputShortestDistance(int from_no, std::vector<MapInfo>& vec_map_info)
+{
+  for (auto elem : vec_map_info)
+  {
+
+  }
+}
+
+void OutputShortestDistances(std::vector<MapInfo>& vec_map_info)
+{
+  for (int i = 0; i < 1; ++i)
+  {
+    OutputShortestDistance(1, vec_map_info);
+  }
+}
+
 int main()
 {
   std::vector<MapInfo> vec_map_info;
   InputMapInfo(vec_map_info);
   OutputMapInfo(vec_map_info);
+  OutputShortestDistances(vec_map_info);
 
   return 0;
 }
