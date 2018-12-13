@@ -601,3 +601,56 @@ RPC, RESTful,消息队列和序列化
 4.1 基于c++的留言板系统
 
 4.1.1 基于socket的通信
+4.1.2 C++的内存与资源管理
+
+4.2 来自服务器的天书
+4.2.1 编码
+4.2.2 c++98的编码缺陷
+宽字符只规定了字节大于等于2,却没有规定具体等于几
+4.2.3 c++11编码支持
+char-->string-->uft-8
+char16_t-->u16string-->utf16
+char32_t-->u32string-->utf32
+std::string u8_str = u8"编码测试";
+std::u16string u16_str = u16"编码测试";
+std::u32string u32_str = u32"编码测试";
+
+std::codecvt_utf8, std::codecvt_utf16, std::codecvt_utf8_utf16
+
+任意编码之间的转换
+libiconv库的iconv
+
+4.3 繁忙的服务器
+
+4.3.1 分身乏术
+因输入输出引起的程序暂停称为阻塞
+
+4.3.2 fork 分身术
+
+4.3.3 进程间通信
+命名管道
+
+4.3.4 轻量级分身
+
+4.3.5 c++11线程
+
+4.3.5 竞争问题与解决方案
+
+两个线程同时争夺一个资源
+锁:
+锁住的代码段如果有抛出异常的话,那么无法解锁
+RAII良好典范,lock_guard
+std::lock_guard<std::mutex> lock(mutex_name);
+
+信号量:
+检查队列和等待的过程被分开了,导致问题
+
+PV操作
+
+4.3.7 多线程优化
+cpu流水线和指令乱序
+内存屏障
+
+4.3.8 异步IO
+
+valgrind
