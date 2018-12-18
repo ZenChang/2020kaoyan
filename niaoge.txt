@@ -301,3 +301,64 @@ swap 内存置换空间:将磁盘文件与内存进行置换
 3.2.8 准备使用linux前的授权同意
 
 3.3 多重引导安装流程
+
+第四章 首次登入与在线求助
+
+4.1 首次登入系统
+4.1.1 首次登入CentOS 7.x图形接口
+linux很多指令是无法复原的,因此一般不要使用root
+4.1.2 GNOME的操作与注销
+
+4.2 文本模式下指令下达
+4.2.1 开始下达指令
+
+command [-option] param1 param2
+第一个被输入的数据绝对是指令或者是可执行文件
+4.2.2 基础指令的操作
+date-->date '+%Y/%m/%d %H:%M:%S'
+cal-->cal 2015
+bc-->
+
+指令的两种情况:
+1. 输入完指令立刻输出结果
+2. 输入完指令必须手动结束,否则一直处于该指令环境中
+
+4.3.2 重要的几个热键
+ctrl+d --> EOF || exit
+
+4.2.4 错误的讯息查看
+
+4.3 linux系统的在线求助main page与info page
+
+4.3.1 指令的--help 求助说明
+4.3.2 man page
+
+date(1)-->1表示一般用户可以使用的指令
+
+4.3.3 info page
+
+4.3.4 其他有用的文件
+man info /usr/share/doc
+/usr/share/man
+/usr/share/info
+/etc/manpath.config
+
+4.4 超简单文书编辑器,nano
+
+4.5 正确的关机方法
+who
+netstat -a
+ps -aux
+sync
+shutdown
+reboot
+halt
+poweroff
+数据同步写入磁盘:sync 最好使用root可以同步所有用户的数据
+shutdown
+
+总结:
+nano /etc/issue
+
+第五章 linux的文件权限与目录配置
+5.1 使用者与群组
